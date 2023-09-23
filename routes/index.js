@@ -1,6 +1,6 @@
-const router = require("express").Router();
+const router = require("express").Router(); //requires express router
 
-router.get("/", (req, res) => { res.send("Hello World");});
+router.get("/", (req, res) => { res.send("Hello World");}); //GET request and responds with Hello World
 
 router.use("/users", require("./users"));
 
